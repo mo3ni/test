@@ -1,0 +1,40 @@
+<!DOCTYPE  html>
+<html lang="en">
+    <head>
+        <title>watch shopping company</title>
+        <meta charset="UTF-8"/>
+        <meta name="Mo3ni"  content="Simple industry webpage"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://code.jquery.com/jquery-3.3.0.js"></script>
+        <link rel="stylesheet" href="./style/form.css" type="text/css"/>
+    </head>
+    <body>
+        <h1>progress bar</h1>
+        <div id="progress">
+        <div id="count">0%</div>
+        <div id="bar"></div>
+    </div>
+    <button onclick="run()">Click</button>
+    </body>
+        </html>
+        <script>
+        function run() {
+            var elem =document.getElementById("bar");
+            var count = document.getElementById("count");
+            var width= 1;
+            var id= setInterval(frame,25);
+                function frame(){
+                    if (width>=100){
+                        clearInterval(id);
+                    }
+                    else {
+                        width++;
+                        elem.style.width = width+'%';
+                       
+                    }
+                    
+                }
+                count.innerHTML =width+ '0%'
+        }
+        </script>
+        

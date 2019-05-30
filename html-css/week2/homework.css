@@ -1,0 +1,172 @@
+/* Css style for industry webpage*/
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    background: #e9dbdb;
+    width: 100%;
+    min-width: 280px;/*Not to allowed the user to make less resolution than this */
+}
+/* Star styling the header */
+ .header {
+    background:rgba(218, 99, 99, .2);
+    padding: 15px;
+    margin: 0;
+    box-shadow: 0 3px rgba(139, 72, 72, 0.2);
+    width: 100%;
+    
+}
+.header h1 {
+    margin-left: 40px;
+    margin-top: 5px;
+    color: rgb(46, 40, 40);
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.header h3 {
+    color: #807878;
+    font-size: 1em; /* it is better to sizing like this bcz it makes more responsive */
+    margin-left: 45px;
+    margin-bottom: 5px;
+}
+/* the navigation bar */
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+.navbar ul li{
+    padding-left: 40px;
+    font-weight: bold;
+    
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+/* making more stylish our webpage by using hover */
+ul li a:hover{
+    background: rgb(230, 131, 131);
+    color: rgb(38, 230, 156);
+    border-radius: 8%;
+    padding: 10px;
+    transition: 0.5s; /* the time that hover start and end */
+}
+/*
+.container {
+    position: relative;
+    min-width: 645px;
+}*/
+div img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;/* making relative the image to whole the body of our webpage TRUE!!! or not HELP */ 
+}
+/*
+.img{
+    background: url(/images/office.jpeg);
+    width: 100%;
+    
+}*/
+@media (max-width:746px){/* if the width of webpage become less than .... than we add some other rules bellow */
+    .navbar ul{
+    flex-wrap: wrap;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5em;
+    }
+}
+  .web-content {
+    padding: 0;
+    margin: 1.5rem 1rem;
+  }
+  .container h2 {
+      text-transform: uppercase;
+  }
+  .container p{
+      color: #413c3c;
+  }
+  .aside {
+      width: 35%;
+    }
+  
+  .wider {
+      width: 50%;
+    }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .icon img {
+    width: 80px;
+    margin: 2rem 1.5rem 1.5rem 1.5rem;
+    cursor: pointer;
+  }
+  /* adding hover effect for icon image */
+  .icon img:hover{
+      transition: 0.5s;
+      transform: scale(1.5);
+  }
+  
+  .web-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+  }
+  .web-content ul li{
+    list-style-type: none;
+  }
+  
+  @media (max-width: 603px) {/* if the width of webpage become less than .... than we add some other rules bellow */
+    .web-content {
+        display: block;
+        margin-left: 25px;
+        width: 100%;
+    }
+}
+/* Start footer of the webpage  */
+footer{
+    background-color: #b278c4;
+    width: 100%;
+}
+.footer h3{
+    text-transform: uppercase;
+    margin-left: 80px;
+    margin-right: 80px;
+    position: relative;
+    color: aliceblue;
+}
+.footer p {
+    color:aliceblue;
+    margin-left: 80px;
+
+}
+.footer ul li{
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer ul li a{
+    text-decoration:none;
+    line-height: 1.5em;
+    color: aliceblue;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+
+}
+/* effecting the google map very simple its better to make let complex for better response */
+.footer iframe {
+    width: 200px;
+    height: auto;
+}
+/* effect for the last part of the webpage after footer */
+h5{
+    text-align: center;
+    color: #8e6a99;
+}
